@@ -1,0 +1,46 @@
+version: '2.2'
+
+services:
+  nginx:
+    container_name: nginx_test
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.nginx
+    depends_on:
+      - api
+    ports:
+      - "0.0.0.0:80:80"
+
+  api:
+    container_name: api_test
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.api
+    command: [ "./entrypoint_api.sh" ]
+    env_file:
+      - .env.test
+    depends_on:
+      - database
+    ports:
+      - "8000:8000"
+
+  database:
+    image: postgres:13-alpine
+    container_name: database_test
+    env_file:
+      - .env.test
+    ports:
+      - "5432:5432"
+
+  tests:
+    container_name: tests
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.test
+    env_file:
+      - .env.test
+    working_dir: /app
+    depends_on:
+      - api
+      - nginx
+    command: [ "./backend/entrypoint_test.sh" ]
