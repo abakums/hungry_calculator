@@ -1,0 +1,88 @@
+{
+    "title": "Pizza Day 2",
+    "requisites": "+7 (900) 125-67-85",
+    "participants": [
+        {
+            "id": 1,
+            "name": "Жора"
+        },
+        {
+            "id": 2,
+            "name": "Аня"
+        },
+        {
+            "id": 3,
+            "name": "Коля"
+        },
+        {
+            "id": 4,
+            "name": "Вася"
+        }
+    ],
+    "bill": [
+        {
+            "payerId": 1,
+            "totalPrice": 300,
+            "positions": [
+                {
+                    "id": 1,
+                    "title": "Пицца Маргарита",
+                    "price": 300,
+                    "parts": 3,
+                    "personalParts": 2,
+                    "personalPrice": 200
+                },
+                {
+                    "id": 3,
+                    "title": "Салат Цезарь",
+                    "price": 200,
+                    "parts": 2,
+                    "personalParts": 1,
+                    "personalPrice": 100
+                }
+            ]
+        },
+        {
+            "payerId": 2,
+            "totalPrice": 499,
+            "positions": [
+                {
+                    "id": 2,
+                    "title": "Паста четыре сыра",
+                    "price": 499,
+                    "parts": 1,
+                    "personalParts": 1,
+                    "personalPrice": 499
+                }
+            ]
+        },
+        {
+            "payerId": 3,
+            "totalPrice": 100,
+            "positions": [
+                {
+                    "id": 1,
+                    "title": "Пицца Маргарита",
+                    "price": 300,
+                    "parts": 3,
+                    "personalParts": 1,
+                    "personalPrice": 100
+                }
+            ]
+        },
+        {
+            "payerId": 4,
+            "totalPrice": 100,
+            "positions": [
+                {
+                    "id": 3,
+                    "title": "Салат Цезарь",
+                    "price": 200,
+                    "parts": 1,
+                    "personalParts": 1,
+                    "personalPrice": 100
+                }
+            ]
+        }
+    ]
+}

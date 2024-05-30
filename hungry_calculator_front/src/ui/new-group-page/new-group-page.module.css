@@ -1,0 +1,28 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+}
+
+.title {
+  margin-top: 60px;
+  margin-bottom: 80px;
+  font: 36px Montserrat;
+  font-weight: 900;
+  text-align: center;
+  color: rgb(46,46,229);
+
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
+}
+
+.info {
+  width: 300px;
+  margin-top: 15px;
+  font: 22px Montserrat;
+  font-weight: 900;
+  text-align: center;
+  color: rgb(46,46,229);
+  display: flex;
+  flex-wrap: wrap;
+}

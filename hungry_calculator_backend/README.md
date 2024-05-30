@@ -1,4 +1,4 @@
-# Hungry calculator backend
+# Голодный калькулятор бэкенд
 
 Backend для проекта Hungry calculator, содержащий API и базу данных на Django + PostgreSQL. 
 

@@ -1,0 +1,88 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+}
+
+.title {
+  margin-top: 60px;
+  margin-bottom: 80px;
+  font: 36px Montserrat;
+  font-weight: 900;
+  text-align: center;
+  color: rgb(46,46,229);
+
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 300px;
+  height: 20px;
+  padding: 15px 25px;
+  border-radius: 10px;
+  margin-top: 15px;
+
+  font: 20px Montserrat;
+  font-weight: 600;
+  background-color: rgb(46,46,229);
+  color: white;
+
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.inputField {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  width: 296px;
+  height: 16px;
+  padding: 15px 25px;
+  border-radius: 10px;
+  margin-top: 15px;
+
+  font: 26px Montserrat;
+  font-weight: 600;
+  outline: none;
+
+  border: solid 2px rgb(46,46,229);
+  background-color: #f7f8fa;
+  text-align: center;
+  color: rgb(46,46,229);
+}
+
+.input:focus {
+  border-color: rgb(46,46,229);
+}
+
+.input::placeholder {
+  font: 20px Montserrat;
+  line-height: 10px;
+  font-weight: 600;
+  transform: translateY(-3px);
+  color: #dcdce0;
+}
+
+.input:focus::placeholder {
+  color: transparent;
+}
+
+.inputCaption {
+  margin-top: 15px;
+  font: 17px Montserrat;
+  font-weight: 400;
+  text-align: center;
+  color: rgb(229, 46, 46);
+}
+

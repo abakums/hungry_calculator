@@ -1,8 +1,8 @@
-# hungry_calculator
+# Голодный калькулятор мобильное приложение
 
-A new Flutter project.
+Проект мобильного приложения на Flutter.
 
-## Getting Started
+## Запуск
 
 This project is a starting point for a Flutter application.
 

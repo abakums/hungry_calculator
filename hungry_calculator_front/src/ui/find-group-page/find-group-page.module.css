@@ -1,0 +1,42 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+}
+
+.title {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  font: 22px Montserrat;
+  font-weight: 900;
+  text-align: center;
+  color: rgb(46,46,229);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+
+  width: 300px;
+  height: 20px;
+  padding: 15px 25px;
+  border-radius: 10px;
+  margin-top: 15px;
+
+  font: 20px Montserrat;
+  font-weight: 600;
+  outline: none;
+
+  border: solid 1px rgb(46,46,229);
+  background-color: #f7f8fa;
+  color: rgb(46,46,229);
+
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: rgb(46,46,229);
+  color: #f7f8fa;
+}
