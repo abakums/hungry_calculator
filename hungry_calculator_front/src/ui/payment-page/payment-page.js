@@ -25,8 +25,8 @@ export const PaymentPage = () => {
   useEffect(() => {
     if (!hasInfo) {
       getGroupById(groupId).then(res => {
-        console.log(res)
-        if (res) {
+        console.log(`На странице оплаты получены данные по группе ID=${groupId}`);
+        if (res && res.bill && res.requisites) {
           setBill(res.bill)
           setRequisites(res.requisites)
           setHasInfo(true)

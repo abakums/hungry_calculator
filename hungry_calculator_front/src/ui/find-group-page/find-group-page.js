@@ -13,8 +13,9 @@ export const FindGroupPage = () => {
   useEffect(() => {
     if (!hasInfo) {
       getGroupById(groupId).then(res => {
-        console.log(res)
-        if (res?.detail !== 'Страница не найдена.') {
+        console.log(`На странице группы получены данные по группе ID=${groupId}`);
+        if (res && res?.detail !== 'Страница не найдена.' && res?.participants) {
+          console.log(`Данные по группе ID=${groupId} валидны`);
           setParticipants(res.participants)
           setHasInfo(true)
         }
@@ -35,7 +36,7 @@ export const FindGroupPage = () => {
             }
           )}
         </div>
-        : null}
+        : <div className={s.title}>Страница не найдена :(<br/>проверьте id группы</div>}
     </Wrapper>
   )
 }

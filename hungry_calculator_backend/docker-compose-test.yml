@@ -33,7 +33,7 @@ services:
       - "5432:5432"
 
   tests:
-    container_name: tests
+    container_name: test
     build:
       context: .
       dockerfile: docker/Dockerfile.test

@@ -23,11 +23,13 @@ export const Main = () => {
     } else {
       const curCode = parseInt(code.toString(), 10)
       getGroupById(curCode).then(r => {
-        console.log(r)
-        if (r?.detail !== 'Страница не найдена.') {
+        console.log(`На главной странице получены данные по группе ID=${curCode}`);
+        if (r && r?.detail !== 'Страница не найдена.') {
+          console.log(`Данные по группе ID=${curCode} валидны`);
           setCodeFound(true)
           return navigate(`/${curCode}`)
         } else {
+          console.warn(`Данные по группе ID=${curCode} не валидны`);
           setCodeFound(false)
         }
       }).catch(() => {
