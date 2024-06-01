@@ -2,7 +2,7 @@ import 'package:http/http.dart' as http;
 
 class Network {
   final String scheme = 'http';
-  final String host = '185.231.154.195';
+  final String host = 'https://88.218.61.170';
   final int port = 80;
   String path;
   String? fragment;
